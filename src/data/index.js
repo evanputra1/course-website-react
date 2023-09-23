@@ -25,8 +25,8 @@ export const navLinks = [
   },
   {
     id: 3,
-    path: "testimonial",
-    text: "Testimonial",
+    path: "testimoni",
+    text: "Testimoni",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const navLinks = [
   },
   {
     id: 5,
-    path: "syaratketen",
+    path: "ketentuan",
     text: "Syarat & Ketentuan",
   },
 ];

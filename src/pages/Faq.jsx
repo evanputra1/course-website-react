@@ -1,6 +1,10 @@
+import FaqComp from '../comp/FaqComp';
+
 const Faq = () => {
   return (
-    <div>Faq</div>
+    <div>
+      <FaqComp />   
+    </div>
   )
 }
 
