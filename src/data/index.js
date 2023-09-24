@@ -160,7 +160,7 @@ export const semuaKelas = [
   },
 ];
 
-export const kelasTerbaru = [
+export const courseTerbaru = [
   {
     id: 1,
     image: KelasImage1,

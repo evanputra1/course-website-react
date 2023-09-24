@@ -45,10 +45,99 @@
 }
 /* Navbar End */
 
-/* Homepage Start */
+/* Homepage Header Start */
 header {
     background: #c6ffdd; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* Homepage End */
+
+.homepage .header-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--navbar-color-text);
+}
+
+.homepage .header-box h1 span {
+    font-weight: 700;
+}
+
+.homepage .header-box p {
+    line-height: 2;
+    color: var(--navbar-color-text);
+    font-weight: 500;
+}
+
+.homepage .header-box img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .homepage .header-box {
+        padding-top: 8rem;
+    }
+
+    .homepage .header-box img {
+        width: 500px;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .homepage .header-box h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1 {
+        font-size: 2.4rem;
+    }
+
+    .homepage .header-box p {
+        font-size: 14px;
+    }
+
+    .homepage .header-box img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .homepage .header-box h1 {
+        font-size: 2rem;
+    }
+
+    .homepage .header-box p {
+        font-size: 12px;
+    }
+}
+/* Homepage Header End */
+
+/* Homepage Kelas Start */
+.homepage .kelas {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.homepage .kelas .row:nth-child(1) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) p {
+    color: var(--navbar-color-text);
+}
+
+.homepage .kelas .row:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.homepage .kelas .row:nth-child(2) img {
+    width: 100%;
+    height: 250px;
+}
+/* Homepage Kelas End */
