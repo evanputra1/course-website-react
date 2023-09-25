@@ -139,7 +139,7 @@ header {
 }
 
 .homepage .kelas .row:nth-child(2) .col {
-    background-color: var(--primary-color);
+    background-color: white;
     padding: 0;
 }
 
@@ -167,27 +167,63 @@ header {
     background-color: var(--primary-color);
 }
 
-.swiper {
+.homepage .testimoni .swiper {
     width: 100%;
     height: 100%;
+    padding-bottom: 50px;
 }
   
-.swiper-slide {
-    text-align: center;
+.homepage .testimoni .swiper-slide {
+    text-align: left;
     font-size: 18px;
     background: #fff;
+    padding: 20px;
   
     /* Center slide text vertically */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: grab;
 }
-  
-.swiper-slide img {
-    display: block;
+
+.homepage .testimoni .swiper-slide:active {
+    cursor: grabbing;
+}
+
+.homepage .testimoni .swiper-slide .desc {
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.homepage .testimoni .swiper-slide .people {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    column-gap: 10px;
+}
+
+.homepage .testimoni .swiper-slide .people h5 {
+    font-weight: 600;
+}
+
+.homepage .testimoni .swiper-slide .people p {
+    opacity: 50%;
 }
   
+.homepage .testimoni .swiper-slide .people img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage .testimoni .swiper {
+        padding-inline: 10px;
+    }
+
+    .homepage .testimoni .swiper-slide .people {
+        justify-content: center;
+    }
+}
 /* Homepage Testimoni End */

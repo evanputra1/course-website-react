@@ -3,6 +3,7 @@ import HeroImage from '../assets/img/hero.png';
 
 import {courseTerbaru, dataSwiper} from '../data/index';
 import {useNavigate} from 'react-router-dom'
+import FaqComp from '../comp/FaqComp';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -49,7 +50,7 @@ const Home = () => {
             <Row>
               {courseTerbaru.map((course) => {
                 return (
-                  <Col key={course.id}>
+                  <Col key={course.id} className='shadow rounded'>
                     <img src={course.image} className='mb-5 rounded-1' />
                     <div className='star mb-2 px-3'>
                       <i className={course.star1}></i>
@@ -111,13 +112,13 @@ const Home = () => {
               >
                 {dataSwiper.map((data) => {
                   return (
-                    <SwiperSlide key={data.id}>
-                      <p>{data.desc}</p>
-                      <div>
+                    <SwiperSlide key={data.id} className='shadow-sm'>
+                      <p className='desc'>{data.desc}</p>
+                      <div className='people'>
                         <img src={data.image} alt="" />
                         <div>
-                          <h5>{data.name}</h5>
-                          <p>{data.skill}</p>
+                          <h5 className='mb-1'>{data.name}</h5>
+                          <p className='m-0 fw-bold'>{data.skill}</p>
                         </div>
                       </div>
                     </SwiperSlide>
@@ -127,6 +128,10 @@ const Home = () => {
             </Row>
           </Container>
         </div>
+
+        {/* Section FAQ */}
+        <FaqComp />
+        {/* Section FAQ */}
     </div>
   )
 }
