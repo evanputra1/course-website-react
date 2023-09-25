@@ -227,3 +227,26 @@ header {
     }
 }
 /* Homepage Testimoni End */
+
+/* FAQ Start */
+.faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--primary-color);
+}
+
+.faq .accordion .accordion-button {
+    font-weight: bold;
+    background-color: white;
+    line-height: 1.5;
+}
+
+.faq .accordion .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.faq .accordion .accordion-body {
+    background-color: white;
+}
+/* FAQ End */
