@@ -134,10 +134,60 @@ header {
 .homepage .kelas .row:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-inline: 10px;
+}
+
+.homepage .kelas .row:nth-child(2) .col {
+    background-color: var(--primary-color);
+    padding: 0;
 }
 
 .homepage .kelas .row:nth-child(2) img {
     width: 100%;
     height: 250px;
 }
+
+.homepage .kelas .row:nth-child(2) .star i {
+    color: gold;
+}
+
+.homepage .kelas .row:nth-child(2) h5 {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.homepage .kelas .row:nth-child(3) {
+    padding-top: 100px;
+}
 /* Homepage Kelas End */
+
+/* Homepage Testimoni Start */
+.homepage .testimoni {
+    background-color: var(--primary-color);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+  
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+/* Homepage Testimoni End */
