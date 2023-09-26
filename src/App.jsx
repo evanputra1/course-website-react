@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 import NavbarComp from './comp/NavbarComp';
-// import FooterComp from './comp/FooterComp';
+import FooterComp from './comp/FooterComp';
 
 import Home from './pages/Home';
 import Kelas from './pages/Kelas';
@@ -22,7 +22,7 @@ function App() {
           <Route path='/faq' Component={Faq} />
         </Routes>
 
-      {/* <FooterComp /> */}
+      <FooterComp />
     </div>
   ); 
 }
