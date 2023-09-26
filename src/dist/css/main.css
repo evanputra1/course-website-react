@@ -16,6 +16,8 @@
     width: 100%;
     transition: all .2s ease;
     z-index: 999;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
 }
 
 .navbar.color-active {
@@ -56,6 +58,7 @@ header {
     font-size: 3.2rem;
     font-weight: 600;
     color: var(--navbar-color-text);
+    --animate-delay: 0.5s;
 }
 
 .homepage .header-box h1 span {
@@ -66,6 +69,11 @@ header {
     line-height: 2;
     color: var(--navbar-color-text);
     font-weight: 500;
+    --animate-delay: 1s;
+}
+
+.homepage .header-box button {
+    --animate-delay: 1.5s;
 }
 
 .homepage .header-box img {
@@ -303,6 +311,56 @@ header {
     line-height: 1.5;
 }
 /* Kelas Page End */
+
+/* Testimoni Page Start */
+.testimoni-page .testimoni {
+    background-color: var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.testimoni-page .testimoni .row:nth-child(1) {
+    padding-bottom: 100px;
+}
+
+.testimoni-page .testimoni .desc {
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.testimoni-page .testimoni .people {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.testimoni-page .testimoni .people h5 {
+    font-weight: 600;
+}
+
+.testimoni-page .testimoni .people p {
+    opacity: 50%;
+}
+  
+.testimoni-page .testimoni .people img {
+    width: 80px;
+    border-radius: 100%;
+}
+
+/* Testimoni Page End */
+
+/* Syarat & Ketentuan Page Start */
+.syarat-ketentuan-page .syarat-ketentuan {
+    padding-top: 150px;
+    background-color: var(--primary-color);
+}
+
+.syarat-ketentuan-page .syarat-ketentuan p {
+    line-height: 2;
+}
+/* Syarat & Ketentuan Page End */
 
 /* Footer Start */
 .footer {

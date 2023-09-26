@@ -2,7 +2,7 @@ import FaqComp from '../comp/FaqComp';
 
 const Faq = () => {
   return (
-    <div>
+    <div className='pt-5'>
       <FaqComp />   
     </div>
   )
