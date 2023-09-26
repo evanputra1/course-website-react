@@ -251,6 +251,59 @@ header {
 }
 /* FAQ End */
 
+/* Kelas Page Start */
+.kelas-page .kelas {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.kelas-page .kelas .row:nth-child(1) h1,
+.kelas-page .kelas .row:nth-child(1) p {
+    color: var(--navbar-color-text);
+}
+
+.kelas-page .kelas .row:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding-inline: 10px;
+}
+
+.kelas-page .kelas .row:nth-child(2) .col {
+    background-color: white;
+    padding: 0;
+}
+
+.kelas-page .kelas .row:nth-child(2) img {
+    width: 100%;
+    height: 250px;
+}
+
+.kelas-page .kelas .row:nth-child(2) .star i {
+    color: gold;
+}
+
+.kelas-page .kelas .row:nth-child(2) h5 {
+    font-weight: bold;
+    line-height: 1.5;
+}
+/* Kelas Page End */
+
 /* Footer Start */
 .footer {
     width: 100%;
