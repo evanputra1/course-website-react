@@ -10,14 +10,14 @@ const Kelas = () => {
         <Container>
           <Row>
             <Col>
-              <h1 className='fw-bold text-center'>Semua Course</h1>
-              <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <h1 className='fw-bold text-center animate__animated animate__fadeInUp animate__delay-1s'>Semua Course</h1>
+              <p className='text-center animate__animated animate__fadeInUp animate__delay-1s'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </Col>
           </Row>
           <Row>
               {semuaKelas.map((course) => {
                 return (
-                  <Col key={course.id} className='shadow rounded'>
+                  <Col key={course.id} className='shadow rounded' data-aos='fade-up' data-aos-duration='1000'>
                     <img src={course.image} className='mb-5 rounded-1' />
                     <div className='star mb-2 px-3'>
                       <i className={course.star1}></i>

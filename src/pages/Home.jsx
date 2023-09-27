@@ -50,7 +50,7 @@ const Home = () => {
             <Row>
               {courseTerbaru.map((course) => {
                 return (
-                  <Col key={course.id} className='shadow rounded'>
+                  <Col key={course.id} className='shadow rounded' data-aos="fade-up" data-aos-duration='1000'>
                     <img src={course.image} className='mb-5 rounded-1' />
                     <div className='star mb-2 px-3'>
                       <i className={course.star1}></i>
@@ -70,7 +70,7 @@ const Home = () => {
             </Row>
             <Row>
               <Col className='text-center'>
-                <button className='btn btn-success rounded-5 btn-lg' onClick={() => navigate('/kelas')}>Lihat Semua Course <i className='fa-solid fa-chevron-right ms-1'></i></button>
+                <button className='btn btn-success rounded-5 btn-lg' onClick={() => navigate('/kelas')} data-aos='fade-up' data-aos-duration='1000'>Lihat Semua Course <i className='fa-solid fa-chevron-right ms-1'></i></button>
               </Col>
             </Row>
           </Container>

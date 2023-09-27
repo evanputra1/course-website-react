@@ -10,14 +10,14 @@ const Testimoni = () => {
         <Container>
           <Row>
             <Col>
-              <h1 className='text-center fw-bold'>Semua Testimoni</h1>
-              <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, rerum.</p>
+              <h1 className='text-center fw-bold animate__animated animate__fadeInUp animate__delay-1s'>Semua Testimoni</h1>
+              <p className='text-center animate__animated animate__fadeInUp animate__delay-1s'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, rerum.</p>
             </Col>
           </Row>
           <Row className='row-cols-lg-3 row-cols-md-2 row-cols-1'>
             {testimonial.map((data) => {
               return (
-                <Col key={data.id} className='mb-5'>
+                <Col key={data.id} className='mb-5' data-aos='fade-up' data-aos-duration='1000'>
                   <p className='desc shadow-sm'>{data.desc}</p>
                   <div className='people'>
                     <img src={data.image} alt="" />
