@@ -8,7 +8,7 @@ const FooterComp = () => {
         <Row className='d-flex justify-content-between'>
           <Col lg='5'>
             <h3 className='fw-bold'>Ayo Ngoding</h3>
-            <p className='desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem distinctio aut! Illum fugit nihil hic possimus error?</p>
+            <p className='desc'>Tempat belajar coding dengan kurikulum industri. Ambil sertifikasi serta kesempatan kerja di berbagai perusahaan.</p>
             <div className='no mb-1 mt-4'>
               <Link className='text-decoration-none'>
                 <i className='fa-brands fa-whatsapp'></i>
@@ -34,13 +34,21 @@ const FooterComp = () => {
             <h5 className='fw-bold mb-3'>Subscribe untuk info menarik</h5>
             <div className='subscribe'>
               <input type="text" placeholder='Subscribe...' />
-              <button className='btn btn-danger rounded'>Subscribe</button>
+              <button className='btn btn-danger rounded ms-2'>Subscribe</button>
             </div>
             <div className='social mt-3'>
-              <i className='fa-brands fa-facebook'></i>
-              <i className='fa-brands fa-github'></i>
-              <i className='fa-brands fa-linkedin'></i>
-              <i className='fa-brands fa-youtube'></i>
+              <a href="https://www.facebook.com/evan.putra.90663" target='_blank' rel="noreferrer">
+                <i className='fa-brands fa-facebook'></i>
+              </a>
+              <a href="https://github.com/evanputra1" target='_blank' rel="noreferrer">
+                <i className='fa-brands fa-github'></i>
+              </a>
+              <a href="https://www.linkedin.com/in/evan-ananda-putra-056176222/" target='_blank' rel="noreferrer">
+                <i className='fa-brands fa-linkedin'></i>
+              </a>
+              <a href="https://www.instagram.com/evan._putra/" target='_blank' rel="noreferrer">
+                <i className='fa-brands fa-instagram'></i>
+              </a>
             </div>
           </Col>
         </Row>

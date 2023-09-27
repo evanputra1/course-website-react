@@ -384,21 +384,21 @@ header {
     min-height: 60vh;
 }
 
-.footer .row:nth-child(1) .col:nth-child(1) .desc {
-    font-size: 14px;
+.footer .desc {
+    font-size: 16px;
     line-height: 2;
 }
 
-.footer .row:nth-child(1) .col:nth-child(1) .no a,
-.footer .row:nth-child(1) .col:nth-child(1) .mail a {
+.footer .no a,
+.footer .mail a {
     display: flex;
     align-items: center;
     color: black;
     column-gap: 5px;
 }
 
-.footer .row:nth-child(1) .col:nth-child(1) .no a:hover,
-.footer .row:nth-child(1) .col:nth-child(1) .mail a:hover {
+.footer .no a:hover,
+.footer .mail a:hover {
     color: var(--secondary-color);
 }
 
@@ -416,31 +416,35 @@ header {
     color: var(--secondary-color);
 }
 
-.footer .row:nth-child(1) .col:nth-child(3) .subscribe {
+.footer .subscribe {
     display: flex;
     align-items: center;
-    gap: 2px;
 }
 
-.footer .row:nth-child(1) .col:nth-child(3) .subscribe input {
+.footer .subscribe input {
     width: 200px;
     height: 35px;
     padding: 5px;
 }
 
-.footer .row:nth-child(1) .col:nth-child(3) .social {
+.footer .social a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .social {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.footer .row:nth-child(1) .col:nth-child(3) .social i {
+.footer .social a i {
     font-size: 25px;
     cursor: pointer;
     transition: all .3s ease;
 }
 
-.footer .row:nth-child(1) .col:nth-child(3) .social i:hover {
+.footer .social a i:hover {
     color: var(--secondary-color);
 }
 
