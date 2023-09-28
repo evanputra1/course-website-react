@@ -4,7 +4,7 @@
 
 :root {
   --primary-color: #f6f8fd;
-  --secondary-color: #dc3545;
+  --secondary-color: #3344ff;
   --color-text: #231942;
   --navbar-color-text: #000000;
 }
@@ -23,7 +23,7 @@
 .navbar.color-active {
     background-color: var(--primary-color);
     padding: 20px 0px;
-    border-bottom: 2px solid #dc35463b;
+    border-bottom: 2px solid #4035dc3b;
 }
 
 .navbar .nav-link a {
@@ -49,9 +49,7 @@
 
 /* Homepage Header Start */
 header {
-    background: #c6ffdd; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f7797d, #fbd786, #c6ffdd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--primary-color); /* fallback for old browsers */
 }
 
 .homepage .header-box h1 {

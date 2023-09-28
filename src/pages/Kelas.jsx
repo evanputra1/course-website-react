@@ -28,8 +28,8 @@ const Kelas = () => {
                     </div>
                     <h5 className='mb-5 px-3'>{course.title}</h5>
                     <div className='ket d-flex justify-content-between align-items-center px-3 pb-3'>
-                      <p className='m-0 text-primary fw-bold'>{course.price}</p>
-                      <button className='btn btn-danger rounded-1'>{course.buy}</button>
+                      <p className='m-0 fw-bold'>{course.price}</p>
+                      <button className='btn btn-primary rounded-1'>{course.buy}</button>
                     </div>
                   </Col>
                 );
