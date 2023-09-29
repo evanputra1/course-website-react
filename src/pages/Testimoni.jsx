@@ -17,8 +17,8 @@ const Testimoni = () => {
           <Row className='row-cols-lg-3 row-cols-md-2 row-cols-1'>
             {testimonial.map((data) => {
               return (
-                <Col key={data.id} className='mb-5' data-aos='fade-up' data-aos-duration='1000'>
-                  <p className='desc shadow-sm'>{data.desc}</p>
+                <Col key={data.id} className='testimoni-card mb-5 shadow-sm' data-aos='fade-up' data-aos-duration='1000'>
+                  <p className='desc'>{data.desc}</p>
                   <div className='people'>
                     <img src={data.image} alt="" />
                     <div>

@@ -191,6 +191,7 @@ header {
     justify-content: center;
     align-items: center;
     cursor: grab;
+    border-radius: 10px;
 }
 
 .homepage .testimoni .swiper-slide:active {
@@ -333,6 +334,11 @@ header {
     animation-delay: .5s;
 }
 
+.testimoni-page .testimoni .testimoni-card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .testimoni-page .testimoni .desc {
     font-weight: 500;
     line-height: 2;
@@ -437,7 +443,7 @@ header {
 }
 
 .footer .social a i {
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     transition: all .3s ease;
 }
@@ -448,5 +454,22 @@ header {
 
 .footer .row:nth-child(2) {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 576px) {
+    .footer .footer-desc {
+        text-align: center;
+    }
+    
+    .footer .nav-footer {
+        text-align: center;
+    }
+
+    .footer .subs-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 /* Footer End */
