@@ -10,7 +10,9 @@ const NavBarComp = () => {
   const changeBackgroundColor = () => {
     if(window.scrollY > 10) {
       setChangeColor(true);
-    } else {
+    } else if(window.innerWidth < 768) {
+      setChangeColor(true);
+    } else if(window.innerWidth > 768) {
       setChangeColor(false);
     }
   }
